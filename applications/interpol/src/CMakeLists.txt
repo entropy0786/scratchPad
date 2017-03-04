@@ -12,8 +12,8 @@ add_executable(interpol ${INTERPOL_APP_SRC_FILES})
 set_target_properties(interpol PROPERTIES LINKER_LANGUAGE CXX )
 set_target_properties(interpol PROPERTIES OUTPUT_NAME interpol )
 # dependencies
-target_include_directories(interpol PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${Boost_INCLUDE_DIR} libImage-static libModel-static)
-target_link_libraries(interpol PUBLIC ${Boost_LIBRARIES} libImage-static libModel-static)
+target_include_directories(interpol PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${Boost_INCLUDE_DIR} libModel-static)
+target_link_libraries(interpol PUBLIC ${Boost_LIBRARIES} libModel-static)
 
 INSTALL(
 	DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
