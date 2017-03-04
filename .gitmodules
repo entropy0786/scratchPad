@@ -1,0 +1,3 @@
+[submodule "libraries/libModel"]
+	path = libraries/libModel
+	url = https://github.com/entropy0786/libModel.git
